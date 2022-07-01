@@ -1,0 +1,16 @@
+.inputCreateTodo{
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    outline: none;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    border: none;
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}

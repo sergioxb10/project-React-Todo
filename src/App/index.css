@@ -1,0 +1,71 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  background: #4b6cb7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-section{
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  display: flex;
+}
+
+.main-section--create_counter{
+  width: 50%;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.main-section--Todos{  
+  width: 50%;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section--create_counter-card{
+  width: 450px;
+  height: 400px;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.main-section--Todos-card{
+  width: 450px;
+  height: 400px;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 16px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.main-section--Todos-card::-webkit-scrollbar {
+  background: transparent;
+  width: 8px;
+}
+
+.main-section--Todos-card::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.5);    /* color of the scroll thumb */
+  border-radius: 20px; 
+  padding:8px 0px 8px 0px;      /* roundness of the scroll thumb */
+}
+
+
+@media (max-width: 1000px) {
+  .main-section--Todos{  
+    width: 100%;
+  }
+  .main-section--create_counter{
+    display:none;    
+  }
+}

@@ -1,0 +1,27 @@
+.item{
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 0px 4px 0px;
+}
+
+.icon-delete:hover{
+    color:white;
+    background-color: red;
+    cursor: pointer;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.checkTodo:hover{
+    cursor: pointer;   
+}
+
+.icon-check--Active{
+    color:white;
+    background-color: green;
+}
+
+.item-p--complete{
+   text-decoration: line-through;
+}
